@@ -30,7 +30,7 @@
 
     var btn = document.querySelectorAll("header button.ui-button--primary");
     if (btn.length != 1) {
-        alert('"Select button" not found or ambiguous.');
+        alert('"Save button" not found or ambiguous.');
         return;
     }
     btn[0].dispatchEvent(new Event('click'));
