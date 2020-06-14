@@ -24,13 +24,13 @@ echo "ngrok URL: $url"
 echo "ngrok ngrok subdomain: $subdomain"
 echo ====================================================
 
-google-chrome $1 1>&- 2>&-
-read -p 'Ensure that you are logged into Shopify admin. Press a to abort, other to continue: ' cont
-if [ "$cont" = 'a' ]
-then
-  exit 2
-fi
+# google-chrome $1 1>&- 2>&-
+# read -p 'Ensure that you are logged into Shopify admin. Press a to abort, other to continue: ' cont
+# if [ "$cont" = 'a' ]
+# then
+#   exit 2
+# fi
 
 str='?subdomain='
 appurl=$1$str$subdomain
-google-chrome $appurl 1>&- 2>&-
+google-chrome $appurl 1>&- 2>&- &
