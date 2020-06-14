@@ -25,7 +25,7 @@ echo "ngrok ngrok subdomain: $subdomain"
 echo ====================================================
 
 google-chrome $1 1>&- 2>&-
-read -p 'Login to Shopify app admin and press a to abort, other to continue: ' cont
+read -p 'Ensure that you are logged to Shopify app admin. Press a to abort, other to continue: ' cont
 if [ "$cont" = 'a' ]
 then
   exit 2
