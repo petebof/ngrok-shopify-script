@@ -10,7 +10,7 @@
 
 (function() {
     var comps = window.top.location.href.split('=');
-    if (comps.length != 2 || !comps[1]) {
+    if (comps.length != 2 || !comps[0].endsWith('subdomain') || !comps[1]) {
         alert('Wrong query in URL... Expected subdomain=smth');
         return;
     }
