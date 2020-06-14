@@ -1,5 +1,5 @@
 # ngrok-shopify-script
-With this code oyu can 
+With this code you can 
 * Start ngrok on your dev Linux machine.
 * Auto-configure the URLs at the app setup on Shopify servers - which was a constant pain for me!
 
