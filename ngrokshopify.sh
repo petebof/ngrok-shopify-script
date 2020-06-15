@@ -21,7 +21,7 @@ sleep 4
 url=`curl -s localhost:4040/api/tunnels | grep -P  --only-matching https://.*?ngrok.io`
 subdomain=`echo $url | cut -d'.' -f 1 | cut -d'/' -f 3`
 echo "ngrok URL: $url"
-echo "ngrok ngrok subdomain: $subdomain"
+echo "ngrok subdomain: $subdomain"
 echo ====================================================
 
 # google-chrome $1 1>&- 2>&-
