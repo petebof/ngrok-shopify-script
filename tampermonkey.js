@@ -4,7 +4,7 @@
 // @version      0.1
 // @description  try to take over the world!
 // @author       You
-// @match        https://partners.shopify.com/123456/apps/1234567/edit?subdomain=*
+// @match        https://partners.shopify.com/123456/apps/*/edit?subdomain=*
 // @grant        none
 // ==/UserScript==
 
